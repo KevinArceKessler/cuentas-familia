@@ -1,0 +1,7 @@
+# Fragmento de configuración para la CLI de Supabase (supabase functions deploy).
+# Estas funciones no reciben el JWT de un usuario: se protegen con un secreto propio en el encabezado.
+[functions.daily-reminders]
+verify_jwt = false
+
+[functions.telegram-webhook]
+verify_jwt = false
